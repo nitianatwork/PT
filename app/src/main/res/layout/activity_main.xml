@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nikhilkgupta.pt.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/voiceInput"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="TextView"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/btnSpeak"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="#FFFFFF"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_mic_black_24dp"
+            />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:text="Submit"
+        android:textColor="#808080"
+        android:layout_marginLeft="5dp"
+        android:background="#FFFFFF"
+        android:layout_below="@id/voiceInput"/>
+
+    </LinearLayout>
+</RelativeLayout>
